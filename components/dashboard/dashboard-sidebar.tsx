@@ -1,11 +1,11 @@
 import {
   //Calendar,
-  Home,
+  //Home,
   //Inbox,
   //ArrowLeft,
-  Flag,
-  History,
-  Search,
+  //Flag,
+  //History,
+  //Search,
   Settings,
   ChevronDown,
   //User2,
@@ -13,8 +13,8 @@ import {
   ShieldCheck,
   //Cog,
   LogOut,
-  LogIn,
-  DoorOpenIcon
+  LogIn
+  //DoorOpenIcon
   //LogIn,
   //Users2
   //UserRoundCog
@@ -52,7 +52,6 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import Image from 'next/image'
 import { Icons } from '@/components/icons'
-import { SVGProps } from 'react'
 
 // Menu items.
 const dashboardItems = [
