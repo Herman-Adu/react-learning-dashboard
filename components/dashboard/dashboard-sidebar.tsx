@@ -254,7 +254,7 @@ export function DashboardSidebar() {
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
                   React Hooks
-                  <ChevronDown className='ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180' />
+                  <ChevronDown className='ml-auto mr-[8px] transition-transform group-data-[state=open]/collapsible:rotate-180' />
                 </CollapsibleTrigger>
               </SidebarGroupLabel>
 
@@ -283,7 +283,7 @@ export function DashboardSidebar() {
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
                   Advance Concepts
-                  <ChevronDown className='ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180' />
+                  <ChevronDown className='ml-auto mr-[8px] transition-transform group-data-[state=open]/collapsible:rotate-180' />
                 </CollapsibleTrigger>
               </SidebarGroupLabel>
 
@@ -309,15 +309,22 @@ export function DashboardSidebar() {
 
       <SidebarFooter>
         <SidebarMenu>
-          <SidebarMenuItem>
+          <SidebarMenuItem className='m-2'>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton className='h-12'>
-                  <Avatar>
-                    <AvatarImage src='/herman-profile-v3.jpg' />
-                    <AvatarFallback>HA</AvatarFallback>
-                  </Avatar>
-                  <ChevronUp className='ml-auto mr-2' />
+                  <div className='flex w-full flex-row items-center justify-between'>
+                    <div className='flex flex-row items-center gap-2'>
+                      <Avatar className='h-8 w-8'>
+                        <AvatarImage src='/herman-profile-v3.jpg' />
+                        <AvatarFallback>HA</AvatarFallback>
+                      </Avatar>
+                      <span className=''>Herman Adu</span>
+                    </div>
+                    <div>
+                      <ChevronUp className='' size={16} />
+                    </div>
+                  </div>
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
               <DropdownMenuContent align='end'>
