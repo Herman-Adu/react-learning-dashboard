@@ -148,6 +148,11 @@ const advanceConceptsMeunItems = [
     title: 'Design Patterns',
     url: '/dashboard/advance-concepts/design-patterns',
     icon: Settings
+  },
+  {
+    title: 'Optimisation',
+    url: '/dashboard/advance-concepts/optimisation',
+    icon: Settings
   }
 ]
 
@@ -244,7 +249,7 @@ export function DashboardSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <Collapsible defaultOpen className='group/collapsible'>
+          <Collapsible defaultOpen={false} className='group/collapsible'>
             <SidebarGroup>
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
@@ -273,7 +278,7 @@ export function DashboardSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <Collapsible defaultOpen className='group/collapsible'>
+          <Collapsible defaultOpen={false} className='group/collapsible'>
             <SidebarGroup>
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
