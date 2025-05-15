@@ -144,5 +144,338 @@ export const Icons = {
     >
       <path d='M21 12a9 9 0 1 1-6.219-8.56' />
     </svg>
+  ),
+  ReactIcon: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 128 128'
+      width='1em'
+      height='1em'
+      {...props}
+    >
+      <g fill='#61DAFB'>
+        <circle cx='64' cy='64' r='11.4'></circle>
+        <path d='M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3c.6-2.4 1.1-4.8 1.5-7.1c2.1-13.2-.2-22.5-6.6-26.1c-1.9-1.1-4-1.6-6.4-1.6c-7 0-15.9 5.2-24.9 13.9c-9-8.7-17.9-13.9-24.9-13.9c-2.4 0-4.5.5-6.4 1.6c-6.4 3.7-8.7 13-6.6 26.1c.4 2.3.9 4.7 1.5 7.1c-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3c-.6 2.4-1.1 4.8-1.5 7.1c-2.1 13.2.2 22.5 6.6 26.1c1.9 1.1 4 1.6 6.4 1.6c7.1 0 16-5.2 24.9-13.9c9 8.7 17.9 13.9 24.9 13.9c2.4 0 4.5-.5 6.4-1.6c6.4-3.7 8.7-13 6.6-26.1c-.4-2.3-.9-4.7-1.5-7.1c2.4-.7 4.7-1.4 6.9-2.3c12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3c-.3 2.1-.8 4.3-1.4 6.6c-5.2-1.2-10.7-2-16.5-2.5c-3.4-4.8-6.9-9.1-10.4-13c7.4-7.3 14.9-12.3 21-12.3c1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6c-3.7.3-7.4.4-11.2.4c-3.9 0-7.6-.1-11.2-.4c-2.2-3.2-4.2-6.4-6-9.6c-1.9-3.3-3.7-6.7-5.3-10c1.6-3.3 3.4-6.7 5.3-10c1.8-3.2 3.9-6.4 6.1-9.6c3.7-.3 7.4-.4 11.2-.4c3.9 0 7.6.1 11.2.4c2.2 3.2 4.2 6.4 6 9.6c1.9 3.3 3.7 6.7 5.3 10c-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3c-3.4.8-7 1.4-10.8 1.9c1.2-1.9 2.5-3.9 3.6-6c1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3c2.3.1 4.6.2 6.9.2c2.3 0 4.6-.1 6.9-.2c-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9c1.1-3.3 2.3-6.8 3.8-10.3c1.1 2 2.2 4.1 3.4 6.1c1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3c3.4-.8 7-1.4 10.8-1.9c-1.2 1.9-2.5 3.9-3.6 6c-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3c-2.3-.1-4.6-.2-6.9-.2c-2.3 0-4.6.1-6.9.2c2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9c-1.1 3.3-2.3 6.8-3.8 10.3c-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3c1-.6 2.2-.9 3.5-.9c6 0 13.5 4.9 21 12.3c-3.5 3.8-7 8.2-10.4 13c-5.8.5-11.3 1.4-16.5 2.5c-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4c2-.8 4.2-1.5 6.4-2.1c1.6 5 3.6 10.3 6 15.6c-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3c.3-2.1.8-4.3 1.4-6.6c5.2 1.2 10.7 2 16.5 2.5c3.4 4.8 6.9 9.1 10.4 13c-7.4 7.3-14.9 12.3-21 12.3c-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3c-1 .6-2.2.9-3.5.9c-6 0-13.5-4.9-21-12.3c3.5-3.8 7-8.2 10.4-13c5.8-.5 11.3-1.4 16.5-2.5c.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1c-1.6-5-3.6-10.3-6-15.6c2.4-5.3 4.5-10.5 6-15.5c13.8 4 22.1 10 22.1 15.6c0 4.7-5.8 9.7-15.7 13.4z'></path>
+      </g>
+    </svg>
+  ),
+  HopOff: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#33f075'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-hop-off-icon lucide-hop-off'
+      {...props}
+    >
+      <path d='M10.82 16.12c1.69.6 3.91.79 5.18.85.28.01.53-.09.7-.27' />
+      <path d='M11.14 20.57c.52.24 2.44 1.12 4.08 1.37.46.06.86-.25.9-.71.12-1.52-.3-3.43-.5-4.28' />
+      <path d='M16.13 21.05c1.65.63 3.68.84 4.87.91a.9.9 0 0 0 .7-.26' />
+      <path d='M17.99 5.52a20.83 20.83 0 0 1 3.15 4.5.8.8 0 0 1-.68 1.13c-1.17.1-2.5.02-3.9-.25' />
+      <path d='M20.57 11.14c.24.52 1.12 2.44 1.37 4.08.04.3-.08.59-.31.75' />
+      <path d='M4.93 4.93a10 10 0 0 0-.67 13.4c.35.43.96.4 1.17-.12.69-1.71 1.07-5.07 1.07-6.71 1.34.45 3.1.9 4.88.62a.85.85 0 0 0 .48-.24' />
+      <path d='M5.52 17.99c1.05.95 2.91 2.42 4.5 3.15a.8.8 0 0 0 1.13-.68c.2-2.34-.33-5.3-1.57-8.28' />
+      <path d='M8.35 2.68a10 10 0 0 1 9.98 1.58c.43.35.4.96-.12 1.17-1.5.6-4.3.98-6.07 1.05' />
+      <path d='m2 2 20 20' />
+    </svg>
+  ),
+  Component: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#f67913'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-component-icon lucide-component'
+      {...props}
+    >
+      <path d='M15.536 11.293a1 1 0 0 0 0 1.414l2.376 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z' />
+      <path d='M2.297 11.293a1 1 0 0 0 0 1.414l2.377 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414L6.088 8.916a1 1 0 0 0-1.414 0z' />
+      <path d='M8.916 17.912a1 1 0 0 0 0 1.415l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.415l-2.377-2.376a1 1 0 0 0-1.414 0z' />
+      <path d='M8.916 4.674a1 1 0 0 0 0 1.414l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z' />
+    </svg>
+  ),
+  Jsx: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#f033c7'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-file-code2-icon lucide-file-code-2'
+      {...props}
+    >
+      <path d='M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4' />
+      <path d='M14 2v4a2 2 0 0 0 2 2h4' />
+      <path d='m5 12-3 3 3 3' />
+      <path d='m9 18 3-3-3-3' />
+    </svg>
+  ),
+  Props: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#ed0707'
+      strokeWidth='2'
+      strokeLinecap='round'
+      stroke-linejoin='round'
+      className='lucide lucide-land-plot-icon lucide-land-plot'
+      {...props}
+    >
+      <path d='m12 8 6-3-6-3v10' />
+      <path d='m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12' />
+      <path d='m6.49 12.85 11.02 6.3' />
+      <path d='M17.51 12.85 6.5 19.15' />
+    </svg>
+  ),
+  State: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#43a894'
+      strokeWidth='2'
+      strokeLinecap='round'
+      stroke-linejoin='round'
+      className='lucide lucide-chart-bar-big-icon lucide-chart-bar-big'
+      {...props}
+    >
+      <path d='M3 3v16a2 2 0 0 0 2 2h16' />
+      <rect x='7' y='13' width='9' height='4' rx='1' />
+      <rect x='7' y='5' width='12' height='4' rx='1' />
+    </svg>
+  ),
+  VirtualDom: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#eddb0c'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-git-fork-icon lucide-git-fork'
+      {...props}
+    >
+      <circle cx='12' cy='18' r='3' />
+      <circle cx='6' cy='6' r='3' />
+      <circle cx='18' cy='6' r='3' />
+      <path d='M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9' />
+      <path d='M12 12v3' />
+    </svg>
+  ),
+  UseState: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#0980b3'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-square-dashed-bottom-code-icon lucide-square-dashed-bottom-code'
+      {...props}
+    >
+      <path d='M10 9.5 8 12l2 2.5' />
+      <path d='M14 21h1' />
+      <path d='m14 9.5 2 2.5-2 2.5' />
+      <path d='M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2' />
+      <path d='M9 21h1' />
+    </svg>
+  ),
+  UseEffect: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#26dfa1'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-braces-icon lucide-braces'
+      {...props}
+    >
+      <path d='M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1' />
+      <path d='M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1' />
+    </svg>
+  ),
+  UseContext: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#f98f15'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      {...props}
+    >
+      <circle cx='5' cy='6' r='3' />
+      <path d='M12 6h5a2 2 0 0 1 2 2v7' />
+      <path d='m15 9-3-3 3-3' />
+      <circle cx='19' cy='18' r='3' />
+      <path d='M12 18H7a2 2 0 0 1-2-2V9' />
+      <path d='m9 15 3 3-3 3' />
+    </svg>
+  ),
+  UseReducer: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#f915bc'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-scan-line-icon lucide-scan-line'
+      {...props}
+    >
+      <path d='M3 7V5a2 2 0 0 1 2-2h2' />
+      <path d='M17 3h2a2 2 0 0 1 2 2v2' />
+      <path d='M21 17v2a2 2 0 0 1-2 2h-2' />
+      <path d='M7 21H5a2 2 0 0 1-2-2v-2' />
+      <path d='M7 12h10' />
+    </svg>
+  ),
+  UseRef: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#e20808'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-book-key-icon lucide-book-key'
+      {...props}
+    >
+      <path d='m19 3 1 1' />
+      <path d='m20 2-4.5 4.5' />
+      <path d='M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20' />
+      <path d='M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844' />
+      <circle cx='14' cy='8' r='2' />
+    </svg>
+  ),
+  UseMemo: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#09aa41'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-refresh-ccw-dot-icon lucide-refresh-ccw-dot'
+      {...props}
+    >
+      <path d='M3 2v6h6' />
+      <path d='M21 12A9 9 0 0 0 6 5.3L3 8' />
+      <path d='M21 22v-6h-6' />
+      <path d='M3 12a9 9 0 0 0 15 6.7l3-2.7' />
+      <circle cx='12' cy='12' r='1' />
+    </svg>
+  ),
+  UseTransistion: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#e4e708'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-square-dashed-kanban-icon lucide-square-dashed-kanban'
+      {...props}
+    >
+      <path d='M8 7v7' />
+      <path d='M12 7v4' />
+      <path d='M16 7v9' />
+      <path d='M5 3a2 2 0 0 0-2 2' />
+      <path d='M9 3h1' />
+      <path d='M14 3h1' />
+      <path d='M19 3a2 2 0 0 1 2 2' />
+      <path d='M21 9v1' />
+      <path d='M21 14v1' />
+      <path d='M21 19a2 2 0 0 1-2 2' />
+      <path d='M14 21h1' />
+      <path d='M9 21h1' />
+      <path d='M5 21a2 2 0 0 1-2-2' />
+      <path d='M3 14v1' />
+      <path d='M3 9v1' />
+    </svg>
+  ),
+  UseId: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#f49325'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-id-card-icon lucide-id-card'
+      {...props}
+    >
+      <path d='M16 10h2' />
+      <path d='M16 14h2' />
+      <path d='M6.17 15a3 3 0 0 1 5.66 0' />
+      <circle cx='9' cy='11' r='2' />
+      <rect x='2' y='5' width='20' height='14' rx='2' />
+    </svg>
+  ),
+  CustomHook: (props: IconProps) => (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#61DAFB'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='lucide lucide-layout-panel-top-icon lucide-layout-panel-top'
+      {...props}
+    >
+      <rect width='18' height='7' x='3' y='3' rx='1' />
+      <rect width='7' height='7' x='3' y='14' rx='1' />
+      <rect width='7' height='7' x='14' y='14' rx='1' />
+    </svg>
   )
 }

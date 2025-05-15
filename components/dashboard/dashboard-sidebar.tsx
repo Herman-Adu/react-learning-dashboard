@@ -12,7 +12,9 @@ import {
   ChevronUp,
   ShieldCheck,
   //Cog,
-  LogOut
+  LogOut,
+  LogIn,
+  DoorOpenIcon
   //LogIn,
   //Users2
   //UserRoundCog
@@ -49,13 +51,15 @@ import {
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import Image from 'next/image'
+import { Icons } from '@/components/icons'
+import { SVGProps } from 'react'
 
 // Menu items.
 const dashboardItems = [
   {
     title: 'Dashboard',
     url: '/dashboard',
-    icon: Home
+    icon: Icons.ReactIcon
   }
 ]
 
@@ -64,32 +68,32 @@ const reactFundamentalsMenuItems = [
   {
     title: 'Introduction',
     url: '/dashboard/react-fundamentals/introduction',
-    icon: Home
+    icon: Icons.HopOff
   },
   {
     title: 'Components',
     url: '/dashboard/react-fundamentals/react-components',
-    icon: Search
+    icon: Icons.Component
   },
   {
     title: 'JSX',
     url: '/dashboard/react-fundamentals/jsx',
-    icon: History
+    icon: Icons.Jsx
   },
   {
     title: 'Props',
     url: '/dashboard/react-fundamentals/props',
-    icon: Flag
+    icon: Icons.Props
   },
   {
     title: 'State',
     url: '/dashboard/react-fundamentals/state',
-    icon: Settings
+    icon: Icons.State
   },
   {
     title: 'Virtual Dom',
     url: '/dashboard/react-fundamentals/virtual-dom',
-    icon: Settings
+    icon: Icons.VirtualDom
   }
 ]
 
@@ -98,42 +102,42 @@ const reactHookMeunItems = [
   {
     title: 'useState',
     url: '/dashboard/react-hooks/use-state',
-    icon: Settings
+    icon: Icons.UseState
   },
   {
     title: 'useEffect',
     url: '/dashboard/react-hooks/use-effect',
-    icon: Settings
+    icon: Icons.UseEffect
   },
   {
     title: 'useContext',
     url: '/dashboard/react-hooks/use-context',
-    icon: Settings
+    icon: Icons.UseContext
   },
   {
     title: 'useReducer',
     url: '/dashboard/react-hooks/use-reducer',
-    icon: Settings
+    icon: Icons.UseReducer
   },
   {
     title: 'useRef',
     url: '/dashboard/react-hooks/use-ref',
-    icon: Settings
+    icon: Icons.UseRef
   },
   {
     title: 'useMemo',
     url: '/dashboard/react-hooks/use-memo',
-    icon: Settings
+    icon: Icons.UseMemo
   },
   {
     title: 'useTransition',
     url: '/dashboard/react-hooks/use-transition',
-    icon: Settings
+    icon: Icons.UseTransistion
   },
   {
     title: 'useId',
     url: '/dashboard/react-hooks/use-id',
-    icon: Settings
+    icon: Icons.UseId
   }
 ]
 
@@ -142,7 +146,7 @@ const advanceConceptsMeunItems = [
   {
     title: 'Custom Hooks',
     url: '/dashboard/advance-concepts/custom-hooks',
-    icon: Settings
+    icon: Icons.CustomHook
   },
   {
     title: 'Design Patterns',
@@ -175,8 +179,9 @@ const footerMenuItems = [
   },
   {
     title: 'Sign in',
-    url: '/authentication',
-    icon: LogOut
+    url: '/sign-in',
+    icon: LogIn,
+    color: '#3e9392'
   }
 ]
 
@@ -254,7 +259,7 @@ export function DashboardSidebar() {
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
                   React Hooks
-                  <ChevronDown className='ml-auto mr-[8px] transition-transform group-data-[state=open]/collapsible:rotate-180' />
+                  <ChevronDown className='ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180' />
                 </CollapsibleTrigger>
               </SidebarGroupLabel>
 
@@ -283,7 +288,7 @@ export function DashboardSidebar() {
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
                   Advance Concepts
-                  <ChevronDown className='ml-auto mr-[8px] transition-transform group-data-[state=open]/collapsible:rotate-180' />
+                  <ChevronDown className='ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180' />
                 </CollapsibleTrigger>
               </SidebarGroupLabel>
 
@@ -309,7 +314,7 @@ export function DashboardSidebar() {
 
       <SidebarFooter>
         <SidebarMenu>
-          <SidebarMenuItem className='m-2'>
+          <SidebarMenuItem className=''>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton className='h-12'>
@@ -337,37 +342,6 @@ export function DashboardSidebar() {
                     />
                   </DropdownMenuItem>
                 ))}
-
-                {/*  <DropdownMenuItem>
-                  <SidebarMenuButton asChild>
-                    <Link
-                      href='/user-settings'
-                      onClick={() => setOpenMobile(false)}
-                    >
-                      <Cog />
-                      <span>Settings</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <SidebarMenuButton asChild>
-                    <Link href='/' onClick={() => setOpenMobile(false)}>
-                      <LogOut />
-                      <span>Sign out</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <SidebarMenuButton asChild>
-                    <Link
-                      href='/authentication'
-                      onClick={() => setOpenMobile(false)}
-                    >
-                      <LogIn />
-                      <span>Sign in</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </DropdownMenuItem> */}
               </DropdownMenuContent>
             </DropdownMenu>
           </SidebarMenuItem>

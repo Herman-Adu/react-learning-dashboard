@@ -1,11 +1,11 @@
 import Heading from '@/components/heading'
 import { Button } from '@/components/ui/button'
 
-export default function OptimisationPage() {
+export default function OptimisationsPage() {
   return (
     <>
       <Heading
-        title='Custom Hooks Tutorial'
+        title='Optimisation in React Tutorial'
         description="Offer's the flexibility of sharing logic across your application, but not state
           itself"
       />
@@ -14,7 +14,7 @@ export default function OptimisationPage() {
         <div className='flex min-h-screen flex-col gap-4 lg:flex-row'>
           <div className='min-h-screen w-full rounded-xl bg-muted/50 p-6 xl:w-4/6'>
             <h2 className='mb-6 text-xl font-bold tracking-tight'>
-              Optimisations in React?
+              Introduction
             </h2>
 
             <p>

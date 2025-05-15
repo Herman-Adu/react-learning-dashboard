@@ -10,7 +10,7 @@ export default function VirtualDomPage() {
         <div className='flex min-h-screen flex-col gap-4 lg:flex-row'>
           <div className='min-h-screen w-full rounded-xl bg-muted/50 p-6 xl:w-4/6'>
             <h2 className='mb-6 text-xl font-bold tracking-tight'>
-              What is the Virtual Dom?
+              Introduction
             </h2>
 
             <p>

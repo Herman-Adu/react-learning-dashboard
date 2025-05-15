@@ -13,7 +13,7 @@ export default function UseEffectPage() {
         <div className='flex min-h-screen flex-col gap-4 lg:flex-row'>
           <div className='min-h-screen w-full rounded-xl bg-muted/50 p-6 xl:w-4/6'>
             <h2 className='mb-6 text-xl font-bold tracking-tight'>
-              What is the useEffect Hook?
+              Introduction
             </h2>
 
             <p>
@@ -37,7 +37,7 @@ export default function UseEffectPage() {
             </h2>
 
             <ol className='ml-8 list-decimal'>
-              <li>The problem of re-renders and memoization in React</li>
+              <li>Introduction</li>
               <li>React Compiler 🚀 to the rescue</li>
               <li>React Compiler on simple examples</li>
               <li>React Compiler on the real app</li>
