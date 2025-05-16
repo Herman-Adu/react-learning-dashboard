@@ -6,7 +6,7 @@ import {
   //Flag,
   //History,
   //Search,
-  Settings,
+  //Settings,
   ChevronDown,
   //User2,
   ChevronUp,
@@ -33,7 +33,7 @@ import {
   SidebarMenuItem,
   SidebarSeparator
 } from '@/components/ui/sidebar'
-import Link from 'next/link'
+//import Link from 'next/link'
 import SidebarMenuActiveButton from '../sidebar-menu-active-button'
 
 import {
@@ -50,116 +50,117 @@ import {
 } from '@/components/ui/dropdown-menu'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import Image from 'next/image'
+//import Image from 'next/image'
 import { Icons } from '@/components/icons'
+import { NavUser } from '../nav-user'
 
-// Menu items.
+// dashboard menu items.
 const dashboardItems = [
   {
     title: 'Dashboard',
     url: '/dashboard',
-    icon: Icons.ReactIcon
+    icon: Icons.reactIcon
   }
 ]
 
-// Menu items.
+// react fundamentals menu items.
 const reactFundamentalsMenuItems = [
   {
     title: 'Introduction',
     url: '/dashboard/react-fundamentals/introduction',
-    icon: Icons.HopOff
+    icon: Icons.hopOff
   },
   {
     title: 'Components',
     url: '/dashboard/react-fundamentals/react-components',
-    icon: Icons.Component
+    icon: Icons.component
   },
   {
     title: 'JSX',
     url: '/dashboard/react-fundamentals/jsx',
-    icon: Icons.Jsx
+    icon: Icons.jsx
   },
   {
     title: 'Props',
     url: '/dashboard/react-fundamentals/props',
-    icon: Icons.Props
+    icon: Icons.props
   },
   {
     title: 'State',
     url: '/dashboard/react-fundamentals/state',
-    icon: Icons.State
+    icon: Icons.state
   },
   {
     title: 'Virtual Dom',
     url: '/dashboard/react-fundamentals/virtual-dom',
-    icon: Icons.VirtualDom
+    icon: Icons.virtualDom
   }
 ]
 
-// Menu items.
+// react hook menu items.
 const reactHookMeunItems = [
   {
     title: 'useState',
     url: '/dashboard/react-hooks/use-state',
-    icon: Icons.UseState
+    icon: Icons.useState
   },
   {
     title: 'useEffect',
     url: '/dashboard/react-hooks/use-effect',
-    icon: Icons.UseEffect
+    icon: Icons.useEffect
   },
   {
     title: 'useContext',
     url: '/dashboard/react-hooks/use-context',
-    icon: Icons.UseContext
+    icon: Icons.useContext
   },
   {
     title: 'useReducer',
     url: '/dashboard/react-hooks/use-reducer',
-    icon: Icons.UseReducer
+    icon: Icons.useReducer
   },
   {
     title: 'useRef',
     url: '/dashboard/react-hooks/use-ref',
-    icon: Icons.UseRef
+    icon: Icons.useRef
   },
   {
     title: 'useMemo',
     url: '/dashboard/react-hooks/use-memo',
-    icon: Icons.UseMemo
+    icon: Icons.useMemo
   },
   {
     title: 'useTransition',
     url: '/dashboard/react-hooks/use-transition',
-    icon: Icons.UseTransistion
+    icon: Icons.useTransistion
   },
   {
     title: 'useId',
     url: '/dashboard/react-hooks/use-id',
-    icon: Icons.UseId
+    icon: Icons.useId
   }
 ]
 
-// Menu items.
+// advance concepts menu items.
 const advanceConceptsMeunItems = [
   {
     title: 'Custom Hooks',
     url: '/dashboard/advance-concepts/custom-hooks',
-    icon: Icons.CustomHook
+    icon: Icons.customHook
   },
   {
     title: 'Design Patterns',
     url: '/dashboard/advance-concepts/design-patterns',
-    icon: Settings
+    icon: Icons.designPatterns
   },
   {
     title: 'Optimisation',
     url: '/dashboard/advance-concepts/optimisation',
-    icon: Settings
+    icon: Icons.optimisation
   }
 ]
 
-// Menu items.
+// footer menu items.
 const footerMenuItems = [
   {
     title: 'Profile',
@@ -184,10 +185,19 @@ const footerMenuItems = [
   }
 ]
 
+// This is sample data.
+const data = {
+  user: {
+    name: 'Adu Dev',
+    email: 'herman@adudev.co.uk',
+    avatar: '/avatars/shadcn.jpg'
+  }
+}
+
 export function DashboardSidebar() {
   return (
     <Sidebar collapsible='icon' variant='inset'>
-      <SidebarHeader className='py-4'>
+      {/* <SidebarHeader className='py-4'>
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
@@ -206,11 +216,15 @@ export function DashboardSidebar() {
                   width={20}
                   height={20}
                 />
-                <span className='mb-[3px]'>Adu Dev</span>
+                <span className='mb-[3px]'>Home Page</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
+      </SidebarHeader> */}
+
+      <SidebarHeader className='h-16 border-b border-sidebar-border'>
+        <NavUser user={data.user} />
       </SidebarHeader>
 
       <SidebarSeparator className='mr-4' />
@@ -316,7 +330,7 @@ export function DashboardSidebar() {
           <SidebarMenuItem className=''>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <SidebarMenuButton className='h-12'>
+                <SidebarMenuButton className='h-8'>
                   <div className='flex w-full flex-row items-center justify-between'>
                     <div className='flex flex-row items-center gap-2'>
                       <Avatar className='h-8 w-8'>

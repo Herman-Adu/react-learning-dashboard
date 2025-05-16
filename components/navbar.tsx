@@ -1,6 +1,6 @@
 'use client'
 
-import { Calendar, Cog, LogIn, LogOut, Moon, Sun } from 'lucide-react'
+import { Calendar, Cog, Home, LogIn, LogOut, Moon, Sun } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
@@ -38,7 +38,13 @@ const Navbar = () => {
 
       {/* Right */}
       <div className='flex items-center gap-4'>
-        <Link href='/'>Dashboard</Link>
+        {/* <Link href='/'>Home</Link> */}
+
+        <Button variant='outline' size='icon'>
+          <Link href='/'>
+            <Home />
+          </Link>
+        </Button>
 
         {/* Theme Menu */}
         <DropdownMenu>

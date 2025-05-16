@@ -5,8 +5,8 @@ export default function UseEffectPage() {
   return (
     <>
       <Heading
-        title='useEffect Hook Tutorial'
-        description='A react hook that lets you take care of side effects'
+        title='useEffect Hook'
+        description='A react hook that lets you synchronize a component with an external system.'
       />
 
       <article className='p-4'>
