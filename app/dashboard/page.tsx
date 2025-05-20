@@ -100,7 +100,7 @@ export default function ReactDashboard() {
             </div>
           </div>
 
-          <div className='grid auto-rows-min gap-4 px-6 md:grid-cols-2 lg:grid-cols-3'>
+          <div className='grid auto-rows-min gap-4 px-6 lg:grid-cols-2 xl:grid-cols-3'>
             <div className='aspect-video rounded-xl bg-muted/50'></div>
             <div className='aspect-video rounded-xl bg-muted/50' />
             <div className='aspect-video rounded-xl bg-muted/50' />

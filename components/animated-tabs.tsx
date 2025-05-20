@@ -262,7 +262,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
             </div>
           </div>
 
-          <div className='space-y-3 px-6 pt-2'>
+          {/* <div className='space-y-3 px-6 pt-2'>
             <div className='flex items-center gap-3 rounded-lg bg-white p-3 dark:bg-zinc-800'>
               <div className='h-2 w-2 rounded-full bg-green-500'></div>
               <p className='text-sm'>
@@ -275,7 +275,8 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                 Added react advance concepts to the platform
               </p>
             </div>
-          </div>
+          </div> */}
+
           {/* </div> */}
           {/* <div>
             <h3 className='mb-4 text-xl font-semibold'>Recent Activity</h3>
