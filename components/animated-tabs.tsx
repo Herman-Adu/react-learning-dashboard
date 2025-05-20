@@ -67,9 +67,9 @@ const TabContent = ({ tab }: { tab: Tab }) => {
           </div>
 
           <div className='mt-8 grid grid-cols-1 gap-4 px-6 pb-10 lg:grid-cols-2 xl:grid-cols-3'>
-            <div className='rounded-lg bg-white p-4 dark:bg-zinc-800'>
-              <Card className='bg-secondary/40 shadow-none'>
-                <CardHeader className='gap-3 pb-2'>
+            <div className='rounded-lg bg-white dark:bg-zinc-800'>
+              <Card className='flex flex-col bg-secondary/40 shadow-none'>
+                <CardHeader className='flex-1 gap-3 pb-2'>
                   <div className='flex h-10 w-10 items-center justify-center rounded-full bg-primary/10'>
                     <ShapesIcon className='h-5 w-5' />
                   </div>
@@ -120,7 +120,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                     </li>
                   </ul>
                 </CardContent>
-                <CardFooter className='pt-1'>
+                <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
                   <Button asChild>
                     <Link href='/dashboard/react-fundamentals/introduction'>
                       React Basics <MoveRightIcon />
@@ -130,7 +130,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
               </Card>
             </div>
 
-            <div className='rounded-lg bg-white p-4 dark:bg-zinc-800'>
+            <div className='rounded-lg bg-white dark:bg-zinc-800'>
               <Card className='bg-secondary/40 shadow-none'>
                 <CardHeader className='gap-3 pb-2'>
                   <div className='flex h-10 w-10 items-center justify-center rounded-full bg-primary/10'>
@@ -184,7 +184,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                     </li>
                   </ul>
                 </CardContent>
-                <CardFooter className='pt-1'>
+                <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
                   <Button asChild>
                     <Link href='/dashboard/react-hooks/use-effect'>
                       React Hooks
@@ -195,7 +195,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
               </Card>
             </div>
 
-            <div className='rounded-lg bg-white p-4 dark:bg-zinc-800'>
+            <div className='rounded-lg bg-white dark:bg-zinc-800'>
               <Card className='bg-secondary/40 shadow-none'>
                 <CardHeader className='gap-3 pb-2'>
                   <div className='flex h-10 w-10 items-center justify-center rounded-full bg-primary/10'>
@@ -207,8 +207,8 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Evolve your mindset understanding react advance concepts
-                    with our comprehensive collection of short tutorials.
+                    A better understanding of react advance concepts with our
+                    comprehensive collection of short tutorials.
                   </p>
 
                   <ul className='mt-6 space-y-3 text-[15px]'>
@@ -249,7 +249,8 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                     </li>
                   </ul>
                 </CardContent>
-                <CardFooter className='pt-1'>
+
+                <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
                   <Button asChild>
                     <Link href='/dashboard/advance-concepts/design-patterns'>
                       Advance Concepts
@@ -258,6 +259,21 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                   </Button>
                 </CardFooter>
               </Card>
+            </div>
+          </div>
+
+          <div className='space-y-3 px-6 pt-2'>
+            <div className='flex items-center gap-3 rounded-lg bg-white p-3 dark:bg-zinc-800'>
+              <div className='h-2 w-2 rounded-full bg-green-500'></div>
+              <p className='text-sm'>
+                UseEffect Tutorial&quot; was updated 2 hours ago
+              </p>
+            </div>
+            <div className='mb-6 flex items-center gap-3 rounded-lg bg-white p-3 dark:bg-zinc-800'>
+              <div className='h-2 w-2 rounded-full bg-blue-500'></div>
+              <p className='text-sm'>
+                Added react advance concepts to the platform
+              </p>
             </div>
           </div>
           {/* </div> */}
