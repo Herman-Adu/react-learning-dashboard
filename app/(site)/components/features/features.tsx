@@ -7,7 +7,7 @@ import {
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
-import { FAQ } from './faq'
+import { FAQ } from '../faqs/faq'
 
 export const Features = () => {
   return (
