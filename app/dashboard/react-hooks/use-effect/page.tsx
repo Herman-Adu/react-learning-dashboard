@@ -376,10 +376,67 @@ export default function UseEffectPage() {
               </h3>
               <p className='leading-7 [&:not(:first-child)]:mt-6'>
                 The second Pitfall to avoid when using useEffect is overlooking
-                the importance of cleaning up side effects. Think about making a
-                chat app, where every user connects to a server to get messages
-                instantly. You would need to create a web socket connection
-                using useEffect, so that it connects when the component loads.
+                the importance of cleaning up side effects. Let&apos;s think
+                about making a chat appplication, where every user connects to a
+                server to instantly get messages. You would need to create a web
+                socket connection using useEffect, so that it connects when the
+                component loads.
+              </p>
+
+              <Image
+                className='mt-8 rounded-lg'
+                src='/use-effect/pitfalls-v3.png'
+                alt='clean up function code image'
+                width={1690}
+                height={720}
+              />
+
+              <p className='leading-7 [&:not(:first-child)]:mt-6'>
+                But if you don&apos;t close the connection when the component is
+                removed the web socket stays open using up resources and
+                possibly causing memory issues this is especially likely if
+                users often move between different chat rooms or Pages just
+                imagine thousands of unused web sockets left open it&apos;s
+                crazy to think about the immense burden that would place on the
+                app server.
+              </p>
+
+              <Image
+                className='mt-8 rounded-lg'
+                src='/use-effect/pitfalls-v4.png'
+                alt='clean up function code image'
+                width={1690}
+                height={720}
+              />
+
+              <p className='leading-7 [&:not(:first-child)]:mt-6'>
+                To avoid this problem you should use the cleanup function in use
+                effect this will make sure that the web socket connection is
+                closed properly when the component is removed or when the user
+                changes to a different chat room.
+              </p>
+
+              <Image
+                className='mt-8 rounded-lg'
+                src='/use-effect/pitfalls-v5.png'
+                alt='clean up function code image'
+                width={1690}
+                height={720}
+              />
+
+              <p className='leading-7 [&:not(:first-child)]:mt-6'>
+                In real life application, if you don&apos;t close connections a
+                lot of connections can stay open even after the user has left
+                the website. This could make the app slow, use too much memory
+                or even stop working especially if many people are using it.
+              </p>
+
+              <p className='leading-7 [&:not(:first-child)]:mt-6'>
+                Cleaning up properly helps the app run well and stay stable no
+                matter how often users move between different parts or pages so
+                in short always use the cleanup function when you need to break
+                or terminate ongoing processes when dealing with side effects in
+                useEffect.
               </p>
               {/*
               <h3 className='mt-6 text-xl font-semibold tracking-tight lg:text-2xl'></h3>
