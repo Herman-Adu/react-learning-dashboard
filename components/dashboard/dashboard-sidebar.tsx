@@ -280,7 +280,7 @@ export function DashboardSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <Collapsible defaultOpen={false} className='group/collapsible'>
+          <Collapsible defaultOpen={true} className='group/collapsible'>
             <SidebarGroup>
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
