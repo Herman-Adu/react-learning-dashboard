@@ -1,4 +1,4 @@
-'use client'
+//'use client'
 
 import data from '@/data/data.json'
 import tabs from '@/data/tabs.json'
