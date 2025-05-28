@@ -520,5 +520,30 @@ export const Icons = {
       <line x1='8.59' x2='15.42' y1='13.51' y2='17.49' />
       <line x1='15.41' x2='8.59' y1='6.51' y2='10.49' />
     </svg>
+  ),
+  conditionalRendering: (props: IconProps) => (
+    <svg
+      width='800px'
+      height='800px'
+      viewBox='0 0 24 24'
+      xmlns='http://www.w3.org/2000/svg'
+      fill='#33f075'
+      stroke='#33f075'
+      {...props}
+    >
+      <g id='SVGRepo_bgCarrier' strokeWidth='0' />
+
+      <g
+        id='SVGRepo_tracerCarrier'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+
+      <g id='SVGRepo_iconCarrier'>
+        <path d='M19.367 8.355l3.89-3.89L19.426.632l-.707.707L21.378 4H14v8H7.95a3.5 3.5 0 1 0 0 1H11v7h10.309l-2.649 2.648.707.707 3.89-3.89-3.832-3.833-.707.707L21.378 19H12v-6h3V5h6.309L18.66 7.648zM4.5 15A2.5 2.5 0 1 1 7 12.5 2.5 2.5 0 0 1 4.5 15z' />
+
+        <path fill='none' d='M0 0h24v24H0z' />
+      </g>
+    </svg>
   )
 }

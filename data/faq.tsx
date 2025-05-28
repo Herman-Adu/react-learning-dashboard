@@ -22,6 +22,6 @@ export const faq = [
   {
     title: 'Can I modify the Shadcn UI components after copying them?',
     content:
-      "Absolutely! Once you copy the code for any Shadcn UI component or block, you have full freedom to modify it according to your project's requirements."
+      "<><h3 className='mt-6 text-xl font-semibold tracking-tight lg:text-2xl'>Cleanup Side Effects</h3><p>Absolutely! Once you copy the code for any Shadcn UI component or block, you have full freedom to modify it according to your project's requirements.</p></>"
   }
 ]

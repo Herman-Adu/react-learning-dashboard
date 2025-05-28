@@ -9,12 +9,12 @@ import {
 } from '@/components/ui/accordion'
 import { faq } from '@/data/faq'
 
-export default function UseStatePage() {
+export default function ConditionalRenderingPage() {
   return (
     <>
       <Heading
-        title='useState Hook'
-        description='A react hook that lets you add a state variables to your components.'
+        title='Conditional Rendering'
+        description='The building block of components'
       />
 
       <article className='p-4'>
@@ -22,7 +22,7 @@ export default function UseStatePage() {
           <div className='flex w-full flex-col gap-6 xl:w-4/6'>
             <div className='w-full rounded-xl bg-muted/50 p-6'>
               <h3 className='text-xl font-semibold tracking-tight lg:text-2xl'>
-                Introduction to useState
+                Introduction to Conditional Rendering
               </h3>
 
               <p className='leading-7 [&:not(:first-child)]:mt-6'>

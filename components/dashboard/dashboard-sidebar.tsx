@@ -94,6 +94,11 @@ const reactFundamentalsMenuItems = [
     title: 'Virtual Dom',
     url: '/dashboard/react-fundamentals/virtual-dom',
     icon: Icons.virtualDom
+  },
+  {
+    title: 'Conditional Rendering',
+    url: '/dashboard/react-fundamentals/conditional-rendering',
+    icon: Icons.conditionalRendering
   }
 ]
 

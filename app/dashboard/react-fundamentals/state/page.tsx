@@ -1,34 +1,69 @@
 import Heading from '@/components/heading'
 import { Button } from '@/components/ui/button'
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from '@/components/ui/accordion'
+import { faq } from '@/data/faq'
+
 export default function ReactStatePage() {
   return (
     <>
       <Heading
         title='React State'
-        description='Adding state to our application'
+        description='A built-in React object that is used to contain data or information about the component.'
       />
 
       <article className='p-4'>
-        <div className='flex min-h-screen flex-col gap-4 lg:flex-row'>
-          <div className='min-h-screen w-full rounded-xl bg-muted/50 p-6 xl:w-4/6'>
-            <h2 className='mb-6 text-xl font-bold tracking-tight'>
-              Introduction
-            </h2>
+        <div className='flex flex-col gap-4 lg:flex-row'>
+          <div className='flex w-full flex-col gap-6 xl:w-4/6'>
+            <div className='w-full rounded-xl bg-muted/50 p-6'>
+              <h3 className='text-xl font-semibold tracking-tight lg:text-2xl'>
+                Introduction to state in React
+              </h3>
 
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
+              <p className='leading-7 [&:not(:first-child)]:mt-6'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It
+                has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+
+              <p className='leading-7 [&:not(:first-child)]:mt-6'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It
+              </p>
+            </div>
+
+            <div className='w-full rounded-xl bg-muted/50 p-6'>
+              <div className=''>
+                <h3 className='mb-4 text-xl font-semibold tracking-tight lg:text-2xl'>
+                  Frequently Asked Questions
+                </h3>
+
+                <Accordion type='multiple' className='w-full border-t'>
+                  {faq.map(({ title, content }, index) => (
+                    <AccordionItem key={index} value={`item-${index}`}>
+                      <AccordionTrigger className='gap-3 py-3 text-left text-lg font-semibold'>
+                        {title}
+                      </AccordionTrigger>
+                      <AccordionContent className='text-base'>
+                        {content}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
           </div>
+
           <div className='hidden max-h-fit rounded-xl bg-muted/50 p-6 xl:block xl:w-2/6'>
             <h2 className='mb-6 text-xl font-bold tracking-tight'>
               Table of Contents

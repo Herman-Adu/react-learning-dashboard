@@ -17,6 +17,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useTabs, type Tab } from '@/hooks/use-tabs'
 import { cn } from '@/lib/utils'
 import { Separator } from './ui/separator'
+import Contact from './contact'
 
 interface AnimatedTabsProps {
   tabs: Tab[]
@@ -66,7 +67,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
             </div>
           </div>
 
-          <div className='mt-8 grid grid-cols-1 gap-4 px-6 pb-10 lg:grid-cols-2 xl:grid-cols-3'>
+          <div className='mt-8 grid grid-cols-1 gap-8 px-6 pb-10 lg:grid-cols-2 xl:grid-cols-3'>
             <div className='rounded-lg bg-white dark:bg-zinc-800'>
               <Card className='flex flex-col bg-secondary/40 shadow-none'>
                 <CardHeader className='flex-1 gap-3 pb-2'>
@@ -121,7 +122,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                   </ul>
                 </CardContent>
                 <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
-                  <Button asChild>
+                  <Button asChild variant='outline'>
                     <Link href='/dashboard/react-fundamentals/introduction'>
                       React Basics <MoveRightIcon />
                     </Link>
@@ -185,7 +186,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                   </ul>
                 </CardContent>
                 <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
-                  <Button asChild>
+                  <Button asChild variant='outline'>
                     <Link href='/dashboard/react-hooks/use-effect'>
                       React Hooks
                       <MoveRightIcon />
@@ -251,7 +252,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                 </CardContent>
 
                 <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
-                  <Button asChild>
+                  <Button asChild variant='outline'>
                     <Link href='/dashboard/advance-concepts/design-patterns'>
                       Advance Concepts
                       <MoveRightIcon />
@@ -300,34 +301,166 @@ const TabContent = ({ tab }: { tab: Tab }) => {
       )}
       {tab.value === 'about' && (
         <div className='space-y-8'>
-          <div>
-            <h2 className='mb-4 text-3xl font-bold'>About Us</h2>
-            <p className='mb-6 text-zinc-600 dark:text-zinc-400'>
-              We&apos;re a team of passionate individuals working together to
-              create amazing solutions for our clients.
+          <div className='ml-6 space-y-0.5 pt-6'>
+            <h3 className='text-xl font-semibold tracking-tight lg:text-2xl'>
+              About Me!
+            </h3>
+            <p className='mb-6 text-muted-foreground'>
+              I am a freelance full-stack web developer based in Greater London
+              and surrounding counties. I provide comprehensive web development
+              services for start-up&apos;s and small to medium business looking
+              to implement comprehensive digital strategy. By focusing on their
+              ethos, goals, aspirations, expectations and existing online
+              presence, I deliver efficient, cost-effective, and tailored
+              digital solutions to clients
             </p>
-            <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
-              <div>
-                <h3 className='mb-3 text-xl font-semibold'>Our Mission</h3>
-                <p className='text-zinc-600 dark:text-zinc-400'>
-                  To empower businesses with innovative tools and solutions that
-                  drive growth and success in the digital age.
-                </p>
-              </div>
-              <div>
-                <h3 className='mb-3 text-xl font-semibold'>Our Vision</h3>
-                <p className='text-zinc-600 dark:text-zinc-400'>
-                  To become the leading platform for business transformation and
-                  digital innovation worldwide.
-                </p>
+            <div className='mb-6 pt-6'>
+              <Separator />
+            </div>
+          </div>
+          <div className='space-y-8'>
+            <div className='ml-6 space-y-0.5'>
+              <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+                <div className='mb-8 rounded-lg bg-white dark:bg-zinc-800'>
+                  <Card className='bg-secondary/40 shadow-none'>
+                    <CardHeader className='flex flex-row gap-3 pb-2'>
+                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-primary/10'>
+                        <PuzzleIcon className='h-5 w-5' />
+                      </div>
+                      <h3 className='text-2xl font-bold tracking-tight'>
+                        My Mission
+                      </h3>
+                    </CardHeader>
+                    <CardContent>
+                      <p>
+                        To deliver innovative tools and solutions that drive
+                        growth and success in the digital age.
+                      </p>
+
+                      <ul className='mt-6 space-y-3 text-[15px]'>
+                        <li className='flex items-start gap-2'>
+                          <CircleCheck className='h-[18px] w-[18px]' />
+                          <div>
+                            <h6 className='mb-0.5 font-semibold leading-[18px]'>
+                              Multiple Variants
+                            </h6>
+                            <p className='text-sm text-foreground/90'>
+                              Access a wide range of component styles to fit any
+                              design need.
+                            </p>
+                          </div>
+                        </li>
+                        <li className='flex items-start gap-2'>
+                          <CircleCheck className='h-[18px] w-[18px]' />
+                          <div>
+                            <h6 className='mb-0.5 font-semibold leading-[18px]'>
+                              Fully Customizable
+                            </h6>
+                            <p className='text-sm text-foreground/90'>
+                              Adjust colors, sizes, and styles to match your
+                              brand seamlessly.
+                            </p>
+                          </div>
+                        </li>
+                        <li className='flex items-start gap-2'>
+                          <CircleCheck className='h-[18px] w-[18px]' />
+                          <div>
+                            <h6 className='mb-0.5 font-semibold leading-[18px]'>
+                              Absolutely Free to Use
+                            </h6>
+                            <p className='text-sm text-foreground/90'>
+                              Enjoy unlimited access to all components at no
+                              cost.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </CardContent>
+                    <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
+                      <Button asChild variant='outline'>
+                        <Link href='/dashboard/react-hooks/use-effect'>
+                          React Hooks
+                          <MoveRightIcon />
+                        </Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </div>
+
+                <div className='mb-8 rounded-lg bg-white dark:bg-zinc-800'>
+                  <Card className='bg-secondary/40 shadow-none'>
+                    <CardHeader className='flex flex-row gap-3 pb-2'>
+                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-primary/10'>
+                        <PuzzleIcon className='h-5 w-5' />
+                      </div>
+                      <h3 className='text-2xl font-bold tracking-tight'>
+                        My Vision
+                      </h3>
+                    </CardHeader>
+                    <CardContent>
+                      <p>
+                        A driving force in advancements, redefining
+                        possibilities in an evolving dynamic digital landscape.
+                      </p>
+
+                      <ul className='mt-6 space-y-3 text-[15px]'>
+                        <li className='flex items-start gap-2'>
+                          <CircleCheck className='h-[18px] w-[18px]' />
+                          <div>
+                            <h6 className='mb-0.5 font-semibold leading-[18px]'>
+                              Multiple Variants
+                            </h6>
+                            <p className='text-sm text-foreground/90'>
+                              Access a wide range of component styles to fit any
+                              design need.
+                            </p>
+                          </div>
+                        </li>
+                        <li className='flex items-start gap-2'>
+                          <CircleCheck className='h-[18px] w-[18px]' />
+                          <div>
+                            <h6 className='mb-0.5 font-semibold leading-[18px]'>
+                              Fully Customizable
+                            </h6>
+                            <p className='text-sm text-foreground/90'>
+                              Adjust colors, sizes, and styles to match your
+                              brand seamlessly.
+                            </p>
+                          </div>
+                        </li>
+                        <li className='flex items-start gap-2'>
+                          <CircleCheck className='h-[18px] w-[18px]' />
+                          <div>
+                            <h6 className='mb-0.5 font-semibold leading-[18px]'>
+                              Absolutely Free to Use
+                            </h6>
+                            <p className='text-sm text-foreground/90'>
+                              Enjoy unlimited access to all components at no
+                              cost.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </CardContent>
+                    <CardFooter className='flex w-full flex-row items-center justify-center pt-1'>
+                      <Button asChild variant='outline'>
+                        <Link href='/dashboard/react-hooks/use-effect'>
+                          React Hooks
+                          <MoveRightIcon />
+                        </Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
         </div>
       )}
       {tab.value === 'contact' && (
-        <div className='mx-auto max-w-2xl'>
-          <h2 className='mb-6 text-3xl font-bold'>Get in Touch</h2>
+        <div className='mx-auto max-w-2xl py-8'>
+          <Contact />
+          {/* <h2 className='mb-6 text-3xl font-bold'>Get in Touch</h2>
           <div className='mb-8 grid grid-cols-1 gap-8 md:grid-cols-2'>
             <div>
               <h3 className='mb-4 text-xl font-semibold'>
@@ -376,10 +509,10 @@ const TabContent = ({ tab }: { tab: Tab }) => {
                 Send Message
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
-      {tab.value === 'danger-zone' && (
+      {/* {tab.value === 'danger-zone' && (
         <div className='mx-auto max-w-2xl'>
           <h2 className='mb-6 text-2xl font-bold text-red-500'>Caution!</h2>
           <div className='space-y-6'>
@@ -404,7 +537,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </motion.div>
   )
 }
