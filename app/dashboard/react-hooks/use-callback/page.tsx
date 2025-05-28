@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/accordion'
 import { faq } from '@/data/faq'
 
-export default function UseContextPage() {
+export default function UseCallbackPage() {
   return (
     <>
       <Heading
@@ -22,7 +22,7 @@ export default function UseContextPage() {
           <div className='flex w-full flex-col gap-6 xl:w-4/6'>
             <div className='w-full rounded-xl bg-muted/50 p-6'>
               <h3 className='text-xl font-semibold tracking-tight lg:text-2xl'>
-                Introduction to useContext
+                Introduction to useCallback
               </h3>
 
               <p className='leading-7 [&:not(:first-child)]:mt-6'>

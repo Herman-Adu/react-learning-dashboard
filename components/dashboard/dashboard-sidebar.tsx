@@ -125,14 +125,19 @@ const reactHookMeunItems = [
     icon: Icons.useReducer
   },
   {
-    title: 'useRef',
-    url: '/dashboard/react-hooks/use-ref',
-    icon: Icons.useRef
+    title: 'useCallback',
+    url: '/dashboard/react-hooks/use-callback',
+    icon: Icons.callbackHook
   },
   {
     title: 'useMemo',
     url: '/dashboard/react-hooks/use-memo',
     icon: Icons.useMemo
+  },
+  {
+    title: 'useRef',
+    url: '/dashboard/react-hooks/use-ref',
+    icon: Icons.useRef
   },
   {
     title: 'useTransition',
@@ -202,32 +207,6 @@ const data = {
 export function DashboardSidebar() {
   return (
     <Sidebar collapsible='icon' variant='inset'>
-      {/* <SidebarHeader className='py-4'>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild>
-              <Link href='/'>
-                <Image
-                  className='hidden dark:block'
-                  src='/adudev-light-Logo.png'
-                  alt='dark-mode-image'
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  className='block dark:hidden'
-                  src='/adudev-Logo.png'
-                  alt='light-mode-image'
-                  width={20}
-                  height={20}
-                />
-                <span className='mb-[3px]'>Home Page</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarHeader> */}
-
       <SidebarHeader className='h-16 border-b border-sidebar-border'>
         <NavUser user={data.user} />
       </SidebarHeader>
@@ -272,7 +251,7 @@ export function DashboardSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <Collapsible defaultOpen={false} className='group/collapsible'>
+          <Collapsible defaultOpen={true} className='group/collapsible'>
             <SidebarGroup>
               <SidebarGroupLabel asChild className='mb-0'>
                 <CollapsibleTrigger>
