@@ -307,43 +307,43 @@ export function DashboardSidebar() {
             </SidebarGroup>
           </Collapsible>
         </SidebarGroup>
-      </SidebarContent>
 
-      <SidebarFooter>
-        <SidebarMenu>
-          <SidebarMenuItem className=''>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <SidebarMenuButton className='h-8'>
-                  <div className='flex w-full flex-row items-center justify-between'>
-                    <div className='flex flex-row items-center gap-2'>
-                      <Avatar className='h-8 w-8'>
-                        <AvatarImage src='/herman-profile-v3.jpg' />
-                        <AvatarFallback>HA</AvatarFallback>
-                      </Avatar>
-                      <span className=''>Herman Adu</span>
+        <SidebarFooter className='mt-6'>
+          <SidebarMenu>
+            <SidebarMenuItem className=''>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <SidebarMenuButton className='h-8'>
+                    <div className='flex w-full flex-row items-center justify-between'>
+                      <div className='flex flex-row items-center gap-2'>
+                        <Avatar className='h-8 w-8'>
+                          <AvatarImage src='/herman-profile-v3.jpg' />
+                          <AvatarFallback>HA</AvatarFallback>
+                        </Avatar>
+                        <span className=''>Herman Adu</span>
+                      </div>
+                      <div>
+                        <ChevronUp className='mr-[1px]' size={14} />
+                      </div>
                     </div>
-                    <div>
-                      <ChevronUp className='' size={16} />
-                    </div>
-                  </div>
-                </SidebarMenuButton>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align='end'>
-                {footerMenuItems.map(item => (
-                  <DropdownMenuItem key={item?.title}>
-                    <SidebarMenuActiveButton
-                      href={(item?.url && item.url) ?? '#'}
-                      icon={item?.icon && <item.icon />}
-                      title={(item?.title && item.title) ?? ''}
-                    />
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarFooter>
+                  </SidebarMenuButton>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align='end'>
+                  {footerMenuItems.map(item => (
+                    <DropdownMenuItem key={item?.title}>
+                      <SidebarMenuActiveButton
+                        href={(item?.url && item.url) ?? '#'}
+                        icon={item?.icon && <item.icon />}
+                        title={(item?.title && item.title) ?? ''}
+                      />
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarFooter>
+      </SidebarContent>
     </Sidebar>
   )
 }
