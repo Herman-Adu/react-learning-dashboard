@@ -1,27 +1,22 @@
 export const useEffectFaqs = [
   {
-    title: 'What is the useEffect Hook?',
+    title: 'What are side effects?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&pos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+      'useEffect enables you to execute code that interacts with external systems (like APIs, event listeners) or alters the DOM after a component renders.'
   },
   {
-    title: 'What are side effect?',
+    title: 'When does the useEffect run?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&pos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+      'By default, useEffect runs after every render, including the initial render. You can control when it runs using an optional dependency array.'
   },
   {
-    title: 'What are life cycle methods?',
+    title: 'What are Dependencies in useEffect?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&pos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+      'The dependency array tells React when to re-run the effect. If the array is empty [], the effect runs only on mount and unmount. If the array contains specific values, the effect re-runs whenever those values change.'
   },
   {
-    title: 'How to fetch data using useEffect?',
+    title: 'What is cleanup?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&pos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
-  },
-  {
-    title: 'What are rule around useEffect?',
-    content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&pos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+      'You can return a function from the useEffect callback to perform cleanup tasks when the component unmounts or before the effect re-runs. This is useful for unsubscribing from events or releasing resources.'
   }
 ]

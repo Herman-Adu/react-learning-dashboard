@@ -136,8 +136,8 @@ export default function ReactDashboard() {
         {/* Project cards section */}
         <div className='mt-7 flex-1 rounded-xl bg-muted/50 pb-8 pt-7'>
           <DashboardSectionHeader
-            title='Tasks'
-            description='Welcome back!, Here is the recent activity applied to the react learning platform.
+            title='Recent Projects'
+            description='Welcome back!, Here is a few recent project i built while learning react.
               app'
           />
 

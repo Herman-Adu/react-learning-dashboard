@@ -458,7 +458,7 @@ const TabContent = ({ tab }: { tab: Tab }) => {
         </div>
       )}
       {tab.value === 'contact' && (
-        <div className='mx-auto max-w-2xl py-8'>
+        <div className='mx-auto max-w-2xl px-8 py-8 md:px-0'>
           <Contact />
           {/* <h2 className='mb-6 text-3xl font-bold'>Get in Touch</h2>
           <div className='mb-8 grid grid-cols-1 gap-8 md:grid-cols-2'>
